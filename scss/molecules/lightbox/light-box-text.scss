@@ -1,0 +1,22 @@
+.light-box-text {
+    padding: 4rem 2rem 4rem 6rem;
+
+    @media(max-width: 1140px) {
+        padding: 2.5rem;
+        padding-top: 0;
+    }
+
+    h3 {
+        margin: 0;
+        font: 600 3.2rem/8rem 'Tide Sans';
+        color: $black;
+    }
+
+    @include line-centered (40px, left, -50px, 40px, 7px, $black);
+
+    p {
+        font: 300 1.8rem/2.6rem 'Tide Sans';
+        color: $black;
+        max-width: 650px;
+    }
+}

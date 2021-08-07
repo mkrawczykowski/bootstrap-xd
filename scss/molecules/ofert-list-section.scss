@@ -1,0 +1,147 @@
+.ofert-list {
+    background-color: $gray1;
+    padding: 4rem 0;
+
+    @media (min-width: 576px) {
+        padding: 10rem 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    &__container {
+        @media (max-width: 576px) {
+            padding: 0;
+        }
+    }
+
+    &__item {
+        padding: 1.3rem 4rem !important;
+
+        @media (min-width: 576px) {
+            padding: 0.8rem !important;
+        }
+
+        &__container {
+            display: block;
+            position: relative;
+            background-color: $white;
+            transition: background-color 0.2s ease-in-out;
+            color: $black;
+            overflow: hidden;
+
+            &::before {
+                position: absolute;
+                content: "";
+                display: block;
+                top: 60px;
+                left: -25px;
+                width: 50px;
+                height: 7px;
+                z-index: 3;
+                background-color: $white;
+            }
+
+            .button-container {
+                margin: 2rem 4rem 4rem;
+
+                @media (min-width: 576px) {
+                    margin: 2rem 6rem 4rem;
+                }
+            }
+        }
+
+        &__image {
+            position: relative;
+            display: block;
+
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: height 0.2s ease-in-out;
+                z-index: 2;
+                background-color: rgba(0, 0, 0, 0.45);
+            }
+
+            img {
+                min-height: 350px;
+                width: 100%;
+                display: block;
+                object-fit: cover;
+            }
+        }
+
+        &:hover {
+            .ofert-list__item__image::before {
+                height: 0;
+            }
+
+            .ofert-list__item__container,
+            .ofert-list__item__button a {
+                color: $white;
+            }
+
+            .ofert-list__item__container--1,
+            .ofert-list__item__button--1 a {
+                background-color: $purple;
+            }
+
+            .ofert-list__item__container--2,
+            .ofert-list__item__button--2 a {
+                background-color: $green;
+            }
+
+            .ofert-list__item__container--3,
+            .ofert-list__item__button--3 a {
+                background-color: $yellow;
+            }
+
+            .ofert-list__item__container--4,
+            .ofert-list__item__button--4 a {
+                background-color: $blue;
+            }
+        }
+
+        &__heading {
+            margin: 0;
+            font: 600 3.2rem/8rem "Tide Sans";
+            color: $white;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            z-index: 3;
+        }
+
+        &__text {
+            padding: 4rem 4rem 0rem;
+
+            @media (min-width: 576px) {
+                padding: 4rem 6rem 0rem;
+            }
+
+            p {
+                font: 300 1.8rem/2.6rem "Tide Sans";
+            }
+        }
+
+        &__button {
+            span {
+                display: block;
+                padding: 4rem 6rem 4rem 4rem;
+
+                @media (min-width: 576px) {
+                    padding: 4rem 6rem 4rem;
+                }
+
+                transition: background-color 0.2s ease-in-out;
+                font: 400 1.8rem/2.6rem "Tide Sans";
+            }
+        }
+    }
+}

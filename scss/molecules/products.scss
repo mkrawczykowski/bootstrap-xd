@@ -1,0 +1,102 @@
+  .products,
+  .prod-content {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-family: "Tide Sans";
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @media (max-width: 1200px) {
+      font-size: 1.6rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.4rem;
+    }
+
+    &__text {
+      p {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  .prod-content {
+    &__header {
+      font-size: 4.2rem;
+      font-weight: 500;
+      font-family: "Tide Sans";
+      margin-bottom: 100px;
+      word-wrap: break-word;
+      @media (max-width: 1200px) {
+        font-size: 3.2rem;
+    }
+    @media (max-width: 600px) {
+        font-size: 2.8rem;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .products {
+    background-color: $gray1;
+    &__header {
+      font-size: 3.6rem;
+      font-weight: 500;
+      font-family: "Tide Sans";
+      margin-bottom: 55px;
+    }
+
+    &-list {
+      &__wrapper {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      &__item {
+        height: 345px;
+        position: relative;
+        background-size: cover;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($black, 0.37);
+          z-index: 0;
+        }
+      }
+      &__header {
+        font-size: 3.2rem;
+        font-weight: 600;
+        font-family: "Tide Sans";
+        color: $white;
+        position: relative;
+        z-index: 1;
+        margin: 20px 0;
+        display: inline-block;
+        padding-left: 1.5em;
+        padding-right: 15px;
+        word-wrap: break-word;
+        &::before {
+          content: "";
+          width: 1.2em;
+          height: 0.2em;
+          background-color: $white;
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: -1.5em;
+          margin-right: 0.3em;
+        }
+
+        @media (max-width: 1200px) {
+          font-size: 2.2rem;
+          margin-bottom: 40px;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }

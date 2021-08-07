@@ -1,0 +1,133 @@
+footer {
+  background-color: $black;
+  padding: 5rem 0;
+  overflow: hidden;
+
+  ul li,
+  a,
+  p {
+    color: $white;
+  }
+
+  a:hover {
+    color: $white;
+  }
+
+  .container {
+    @media (min-width: 1540px) {
+      max-width: 1430px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      .footer-column-1 {
+        width: 41rem;
+
+        .footer-column-1__logo {
+          max-width: 19rem;
+          margin-bottom: 3.7rem;
+        }
+
+        ul li {
+          font-family: "Tide Sans";
+          font-weight: 500;
+          font-size: 2rem;
+          margin-bottom: 1.1rem;
+        }
+      }
+      .footer-column-2 {
+        padding-top: 7.8rem;
+        width: 59rem;
+
+        p,
+        a,
+        ul li,
+        ol li {
+          font-family: "Tide Sans";
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 1.7;
+        }
+        p {
+          margin-bottom: 1.6rem;
+        }
+      }
+      .footer-column-3 {
+        padding-top: 7.8rem;
+
+        p,
+        a,
+        ul li,
+        ol li {
+          font-family: "Tide Sans";
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 1.7;
+        }
+        p {
+          margin-bottom: 1.6rem;
+        }
+
+        ul {
+          display: flex;
+          justify-content: flex-start;
+          position: relative;
+          margin-bottom: 6rem;
+
+          li {
+            min-height: 4rem;
+            display: flex;
+            align-items: center;
+          }
+
+          li:nth-child(2) {
+            margin: 0 2.5rem;
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 1.6rem;
+            left: 19.5rem;
+            width: 70rem;
+            height: 0.7rem;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+
+    .bottom-footer {
+      padding-top: 5rem;
+
+      a {
+        font-family: "Tide Sans";
+        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 1.7;
+        color: $gray3;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li:not(:first-child) {
+          padding: 0 1.4rem;
+        }
+        li:first-child {
+          padding: 0 1.4rem 0 0;
+        }
+      }
+
+      .col-3 {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.check-list {
+  font-family: "Tide Sans";
+
+  &-top {
+    h4 {
+      font-size: 3.6rem;
+      font-weight: 500;
+      margin-bottom: 60px;
+      @media (max-width: 1200px) {
+        margin-bottom: 45px;
+        font-size: 1.8rem;
+      }
+      @media (max-width: 600px) {
+        margin-bottom: 30px;
+        font-size: 1.6rem;
+      }
+    }
+    p {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-bottom: 60px;
+
+      @media (max-width: 1200px) {
+        margin-bottom: 45px;
+        font-size: 1.6rem;
+      }
+      @media (max-width: 600px) {
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &-data {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      flex: 0 0 33%;
+      max-width: 33%;
+      position: relative;
+      padding: 0 15px 0 45px;
+      min-height: 27px;
+      margin-bottom: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: top;
+      &::before {
+        content: "";
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        background-image: url(../images/check-list-icon.svg);
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 1.6rem;
+      }
+      @media (max-width: 600px) {
+        font-size: 1.4rem;
+      }
+
+      @media (max-width: 991px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      @media (max-width: 575px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
