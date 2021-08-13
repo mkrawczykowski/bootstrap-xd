@@ -1,0 +1,107 @@
+.main-nav {
+  transition: all 0.3s ease;
+
+  .container {
+    .row {
+      .col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        padding-top: 5rem;
+        position: relative;
+
+        .main-nav__logo {
+          position: relative;
+          top: 0;
+          left: 0;
+          transition: all 0.5s ease;
+
+          h1 {
+            color: $white;
+            font-family: "Raleway", sans-serif;
+            font-size: 4rem;
+            line-height: 100%;
+            font-weight: 400;
+            color: $white;
+            margin: 0;
+          }
+        }
+
+        .main-nav__hamburger {
+          display: block;
+          width: 4rem;
+          height: 4rem;
+          position: relative;
+          justify-self: end;
+
+          &-line {
+            background-color: $white;
+            width: 100%;
+            height: 0.3rem;
+            position: absolute;
+
+            &1 {
+              top: 0;
+            }
+            &2 {
+              top: 1.9rem;
+            }
+            &3 {
+              bottom: 0;
+            }
+          }
+        }
+
+        .main-nav__main-menu {
+          display: none;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          transition: all 0.5s ease;
+
+          & > li {
+            color: $white;
+            width: 100%;
+            text-align: center;
+            font-family: "Raleway", sans-serif;
+            font-size: 2.4rem;
+            line-height: 100%;
+            font-weight: 400;
+            color: $white;
+            margin: 0;
+            transition: all 0.5s ease;
+          }
+        }
+      }
+    }
+  }
+
+  &--active {
+    background: $black;
+    transition: all 0.3s ease;
+
+    .container {
+      .row {
+        .col {
+          .main-nav__logo {
+            position: relative;
+            top: 3rem;
+            left: 50%;
+            text-align: center;
+            transition: all 0.3s ease;
+          }
+
+          .main-nav__main-menu {
+            display: block;
+            margin-top: 9rem;
+            transition: all 0.3s ease;
+
+            & > li {
+              margin-bottom: 6rem;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}

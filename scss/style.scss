@@ -1,5 +1,3 @@
-// @import "tiny-slider/src/tiny-slider";
-
 @import "bootstrap";
 @import "variables";
 @import "mixin";
@@ -7,48 +5,7 @@
 @import "fonts";
 
 @import "./atoms/button-container.scss";
-@import "./atoms/data-box.scss";
-@import "./atoms/breadcrumbs.scss";
 
-@import "./molecules/page-title-section.scss";
-@import "./molecules/image-boxes-text.scss";
-@import "./molecules/box-image.scss";
-@import "./molecules/lightbox";
-@import "./molecules/logos-grid";
-// @import "./molecules/hp-slider";
-@import "./molecules/carousel";
-@import "./molecules/timeline";
-@import "./molecules/tabs";
-@import "./molecules/image-slideshow";
-@import "./molecules/image-caption";
-@import "./molecules/text-column";
-@import "./molecules/icon-column";
-@import "./molecules/contact-map";
-@import "./molecules//check-list";
-@import "./molecules/image-top-section";
-@import "./molecules/products";
-@import "./atoms/mobile-menu-icon.scss";
+@import "./molecules/bootstrap-grid.scss";
 
-@import "./molecules/main-navigation.scss";
-@import "./molecules/page-title-section.scss";
-@import "./molecules/page-enter-text-section.scss";
-@import "./molecules/ofert-list-section.scss";
-@import "./molecules/ofert-info-section.scss";
-@import "./molecules/sub-ofert-title-image.scss";
-@import "./molecules/sub-ofert-list-section.scss";
-@import "./molecules/home-enter-image-section.scss";
-@import "./molecules/home-news-section.scss";
-@import "./molecules/home-brands-section.scss";
-@import "./molecules/page-title-breadcrumbs.scss";
-@import "./molecules/page-simple-text.scss";
-
-@import "./molecules/lightbox/light-box-text.scss";
-@import "./molecules/lightbox/light-box-image.scss";
-@import "./molecules/lightbox/light-box-slider.scss";
-
-@import "./organisms/light-box.scss";
-
-// @import "./organisms/header";
-// @import "./organisms/footer";
-@import "./organisms/section";
-@import "./organisms/footer";
+@import "./organisms/main-nav.scss";
